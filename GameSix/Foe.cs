@@ -8,19 +8,27 @@ namespace GameSix
         private float shield;
 
         // Foe Class constructor.
-        public Foe(string name)
+        public Foe(string Get_Name)
         {
-            this.name = name;
+            this.name = Get_Name;
             health = 100;
             shield = 0;
         }
 
-        // Obtain the Foe name.
-        public string GetName()
+        // Obtain the Foe name. 
+        public string Get_Name()
         {
             return name;
         }
-
+        public float Get_Health()
+        {
+            return health;
+        }
+        public float Set_Shield()
+        {
+            return shield;
+        }
+        
         // Damage inflicted to the Foe.
         public void TakeDamage(float damage)
         {
